@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="text-center">
+        <h1>ImageGen</h1>
+        <p>Generate images from text prompts using AI</p>
+        <form id="prompt-form">
+            <input type="text" id="prompt" placeholder="Enter your prompt here..." required>
+            <button type="submit">Generate</button>
+        </form>
+    </div>
+    <main>
+        <section id="results">
+            <h2>Generated Images</h2>
+            <div id="image-container"></div>
+            <div id="loading" style="display: none;">Loading...</div>
+            
+            <div id="previous-images"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
